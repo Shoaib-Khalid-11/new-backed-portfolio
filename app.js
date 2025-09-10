@@ -5,4 +5,9 @@ app.get("/", (req, res) => {
     message: "Hello World",
   });
 });
+app.get("/about", (req, res) => {
+  res.json({
+    message: "About Me",
+  });
+});
 export default app;
